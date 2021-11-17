@@ -1,0 +1,18 @@
+Commant Executed :> solana-keygen new --outfile ~/.config/solana/devnet-plutoon.json
+
+
+Wrote new keypair to ~/.config/solana/devnet-plutoon.json
+=============================================================================
+pubkey: B2XUVT282gUcDGutscX5a8AEZEtX8Svo3Y6FjDQFd8qa
+=============================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+bulb inner lawsuit arm kangaroo second announce bench admit casino major claw
+=============================================================================
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts upload ./assets --env devnet --keypair ~/.config/solana/devnet-plutoon.json
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts create_candy_machine --env devnet --keypair ~/.config/solana/devnet-plutoon.json 
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts update_candy_machine --keypair ~/.config/solana/devnet-plutoon.json --price 1 --date "15 Nov 2021 00:00:00 EST"
+
+"authority":"B2XUVT282gUcDGutscX5a8AEZEtX8Svo3Y6FjDQFd8qa","candyMachineAddress":"7AqpN9Ty9jgxYSusP8CwPevCkF9ZsdF1z8nj5qxNGeNq","startDate":1636952400
